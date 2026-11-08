@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #f0f7ff;
+  --foreground: #0b1528;
+}
+
+body {
+  background-color: #f0f7ff;
+  color: #0b1528;
+  font-family: var(--font-space-grotesk), sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom Ice Blue scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f0f7ff;
+}
+::-webkit-scrollbar-thumb {
+  background: #bae6fd;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #7dd3fc;
+}
+
+/* Master Ice Blue Canvas Glow */
+.ice-canvas {
+  background-color: #f0f7ff;
+  background-image: 
+    radial-gradient(ellipse 55% 45% at 92% 38%, rgba(56, 189, 248, 0.45) 0%, rgba(186, 230, 253, 0.2) 50%, transparent 80%),
+    radial-gradient(ellipse 45% 45% at 5% 15%, rgba(186, 230, 253, 0.5) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 50% at 50% 90%, rgba(199, 210, 254, 0.35) 0%, transparent 75%);
+}
+
+/* Crisp Sharp Navbar (No rounded corners) */
+.navbar-pill {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(186, 230, 253, 0.9);
+  border-radius: 0px !important;
+  box-shadow: 
+    0 15px 35px -10px rgba(2, 132, 199, 0.1),
+    inset 0 1px 1px rgba(255, 255, 255, 0.9);
+}
+
+/* Sharp Card Backplate */
+.ice-backplate {
+  background: rgba(224, 242, 254, 0.5);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  border: 1px solid rgba(186, 230, 253, 0.85);
+  border-radius: 0px !important;
+  box-shadow: 
+    0 25px 50px -15px rgba(14, 165, 233, 0.18),
+    inset 0 1px 2px rgba(255, 255, 255, 0.8);
+}
+
+/* Inner Sharp Code Card */
+.ice-code-card {
+  background: rgba(240, 249, 255, 0.88);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(186, 230, 253, 0.9);
+  border-radius: 0px !important;
+  box-shadow: 0 10px 25px -5px rgba(2, 132, 199, 0.08);
+}
+
+/* Primary Sharp Cyan Button */
+.btn-cyan-primary {
+  background: linear-gradient(135deg, #38bdf8 0%, #0284c7 100%);
+  color: #ffffff;
+  border-radius: 0px !important;
+  box-shadow: 
+    0 6px 16px -3px rgba(2, 132, 199, 0.3),
+    inset 0 1px 1px rgba(255, 255, 255, 0.4);
+  transition: all 0.2s ease;
+}
+
+.btn-cyan-primary:hover {
+  background: linear-gradient(135deg, #0ea5e9 0%, #0369a1 100%);
+  box-shadow: 
+    0 10px 20px -3px rgba(2, 132, 199, 0.4),
+    inset 0 1px 1px rgba(255, 255, 255, 0.5);
+  transform: translateY(-1px);
+}
+
+/* Secondary Sharp Frosted Button */
+.btn-ice-secondary {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  color: #0369a1;
+  border: 1px solid #7dd3fc;
+  border-radius: 0px !important;
+  box-shadow: 0 4px 12px -2px rgba(14, 165, 233, 0.1);
+  transition: all 0.2s ease;
+}
+
+.btn-ice-secondary:hover {
+  background: rgba(224, 242, 254, 0.9);
+  border-color: #38bdf8;
+  color: #0284c7;
+  transform: translateY(-1px);
+}
+
+/* Sharp Project Showcase Cards */
+.ice-project-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(186, 230, 253, 0.85);
+  border-radius: 0px !important;
+  box-shadow: 
+    0 15px 35px -10px rgba(2, 132, 199, 0.08),
+    inset 0 1px 2px rgba(255, 255, 255, 0.8);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.ice-project-card:hover {
+  transform: translateY(-3px);
+  border-color: #38bdf8;
+  box-shadow: 
+    0 25px 45px -12px rgba(14, 165, 233, 0.2),
+    0 0 0 1px rgba(56, 189, 248, 0.5);
+}
